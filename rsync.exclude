@@ -1,0 +1,15 @@
+.gitignore
+.git
+.DS_Store
+archive
+Makefile
+Rakefile
+rsync*
+*.lock
+.sass-cache
+Guardfile
+Gemfile
+*.scss
+*.coffee
+node_modules
+package.json

@@ -1,0 +1,200 @@
+/******************************************************************
+Theme Name: AIS
+Theme URI: http://joshellington.com
+Description: ///
+Author: ///
+Author URI: ///
+Version: 1.0
+Tags: ///
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+******************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); }
+
+body {
+  font-family: 'Space Mono', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0;
+  transition: 0.3s opacity ease-in-out; }
+  body.loaded {
+    opacity: 1; }
+
+h1, h2, h3, h4 {
+  text-transform: uppercase; }
+
+p {
+  font-size: 14px;
+  line-height: 1.5; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: #111;
+  text-decoration: none;
+  transition: 0.1s all ease-in-out; }
+  a:hover {
+    color: #e0a556; }
+
+header {
+  padding: 50px 50px 0 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; }
+  header h1 {
+    font-size: 24px;
+    display: inline-block; }
+  header a {
+    border-bottom: 0;
+    display: inline-block;
+    margin-left: 5px; }
+  header nav {
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    float: right; }
+
+footer {
+  text-align: center;
+  padding: 25px 0; }
+  footer p {
+    font-size: 11px; }
+
+.home-post {
+  position: relative;
+  max-width: 75%;
+  margin: 100px auto 0; }
+  .home-post h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-bottom: 25px; }
+    .home-post h2 a {
+      border-bottom: 0; }
+  .home-post .image {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center; }
+  .home-post .image a {
+    display: inline-block; }
+  .home-post img {
+    display: block;
+    max-height: 100%;
+    max-height: 100%;
+    margin: 0 auto; }
+
+.pagination {
+  padding: 50px;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  clear: both; }
+  .pagination:before {
+    content: "-";
+    display: block;
+    padding-bottom: 25px; }
+  .pagination a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px; }
+
+.permalink-post {
+  max-width: 75%;
+  margin: 100px auto;
+  text-align: center; }
+  .permalink-post h2 {
+    font-size: 18px;
+    padding: 0 0 25px; }
+  .permalink-post h3 {
+    font-size: 13px; }
+  .permalink-post h4 {
+    font-size: 11px;
+    padding-bottom: 10px; }
+  .permalink-post .content {
+    margin: 0; }
+  .permalink-post .content a {
+    display: inline-block;
+    margin: 50px 0; }
+
+.archive h3 {
+  font-size: 18px;
+  text-align: center;
+  margin: 50px; }
+
+.archive-page {
+  margin: 100px 0;
+  text-align: center; }
+  .archive-page h4 {
+    padding: 0 0 25px; }
+  .archive-page span.archive-category {
+    text-transform: uppercase;
+    font-size: 13px;
+    display: inline-block; }
+
+.archive-posts {
+  overflow: hidden;
+  margin: 50px 0 0; }
+
+.archive-post {
+  float: left;
+  width: 10%; }
+  .archive-post a, .archive-post img {
+    display: block; }
+
+/*# sourceMappingURL=style.css.map */

@@ -14,7 +14,7 @@ $wp_query->query($query_args);
 
 <div class="home">
   <?php if ( $wp_query->have_posts() ) : while ( $wp_query->have_posts() ) : $wp_query->the_post(); // run the loop ?>
-    <div class="home-post">
+    <div class="home-post post">
       <?php
       $media = get_attached_media('image');
       $randomMedia = $media[array_rand($media, 1)];
@@ -22,7 +22,7 @@ $wp_query->query($query_args);
       <div class="image">
         <a href="<?php echo the_permalink(); ?>">
           <h2><?php echo the_title(); ?></h2>
-          <img src="<?php echo wp_get_attachment_image_src($randomMedia->ID, 'full')[0]; ?>">
+          <img src="<?php echo wp_get_attachment_image_src($randomMedia->ID, 'large')[0]; ?>">
         </a>
       </div>
     </div>

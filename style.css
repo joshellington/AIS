@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /******************************************************************
 Theme Name: AIS
 Theme URI: http://joshellington.com
@@ -84,8 +85,11 @@ h1, h2, h3, h4 {
   text-transform: uppercase; }
 
 p {
-  font-size: 14px;
-  line-height: 1.5; }
+  font-size: 13px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  max-width: 600px;
+  margin: 0 auto; }
 
 img {
   max-width: 100%; }
@@ -96,6 +100,35 @@ a {
   transition: 0.1s all ease-in-out; }
   a:hover {
     color: #e0a556; }
+
+.search-header {
+  display: none;
+  position: relative;
+  z-index: 3; }
+
+.searchform {
+  text-align: center; }
+  .searchform form {
+    display: inline-block; }
+  .searchform input {
+    border: 1px solid #111;
+    border-top: 0;
+    outline: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    font-family: 'Space Mono';
+    font-size: 13px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 300px; }
+  .searchform button {
+    outline: 0;
+    border: 0;
+    -webkit-appearance: none;
+    background: white;
+    color: #111;
+    text-transform: uppercase;
+    font-size: 13px; }
 
 header {
   padding: 50px 50px 0 50px;
@@ -126,7 +159,8 @@ footer {
 .home-post {
   position: relative;
   max-width: 75%;
-  margin: 100px auto 0; }
+  padding: 50px 0 0;
+  margin: 50px auto 0; }
   .home-post h2 {
     font-size: 13px;
     text-transform: uppercase;
@@ -153,7 +187,7 @@ footer {
   text-align: center;
   clear: both; }
   .pagination:before {
-    content: "-";
+    content: "—";
     display: block;
     padding-bottom: 25px; }
   .pagination a {
@@ -172,17 +206,20 @@ footer {
     font-size: 13px; }
   .permalink-post h4 {
     font-size: 11px;
-    padding-bottom: 10px; }
+    padding-bottom: 25px;
+    word-wrap: break-word; }
   .permalink-post .content {
-    margin: 0; }
-  .permalink-post .content a {
+    margin: 50px 0 0; }
+    .permalink-post .content p:last-of-type {
+      padding: 0 0 50px; }
+  .permalink-post .content img {
     display: inline-block;
-    margin: 50px 0; }
+    margin: 0 0 50px 0; }
 
 .archive h3 {
   font-size: 18px;
   text-align: center;
-  margin: 50px; }
+  margin: 100px 50px 50px; }
 
 .archive-page {
   margin: 100px 0;
@@ -203,5 +240,12 @@ footer {
   width: 10%; }
   .archive-post a, .archive-post img {
     display: block; }
+
+.static-page {
+  margin: 100px 50px;
+  text-align: center; }
+  .static-page h2 {
+    font-size: 18px;
+    padding-bottom: 25px; }
 
 /*# sourceMappingURL=style.css.map */

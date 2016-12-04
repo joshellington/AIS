@@ -34,10 +34,14 @@
 		</div>
 
 		<div class="container">
+			<div class="search-header">
+				<?php get_search_form(); ?>
+			</div>
+
 	    <header>
 	      <h1><a href="<?php echo home_url(); ?>">AIS</a></h1>
 	      <nav>
 	        <a href="/archive">Archive</a>
-	        <!-- <a href="#">Search</a> -->
+	        <a href="#" class="search-toggle">Search</a>
 	      </nav>
 	    </header>

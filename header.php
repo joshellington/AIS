@@ -29,10 +29,15 @@
 	</head>
 
   <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-    <header>
-      <h1><a href="<?php echo home_url(); ?>">AIS</a></h1>
-      <nav>
-        <a href="/archive">Archive</a>
-        <!-- <a href="#">Search</a> -->
-      </nav>
-    </header>
+		<div class="loading centered">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/loading.svg">
+		</div>
+
+		<div class="container">
+	    <header>
+	      <h1><a href="<?php echo home_url(); ?>">AIS</a></h1>
+	      <nav>
+	        <a href="/archive">Archive</a>
+	        <!-- <a href="#">Search</a> -->
+	      </nav>
+	    </header>

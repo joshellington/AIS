@@ -21,11 +21,27 @@ body {
   font-family: 'Space Mono', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  opacity: 0;
-  transition: 0.3s opacity ease-in-out;
+
+  .container {
+    opacity: 0;
+    transition: 0.3s opacity ease-in-out;
+    -webkit-transition: 0.3s opacity ease-in-out;
+  }
 
   &.loaded {
-    opacity: 1;
+    .container {
+      opacity: 1;
+    }
+
+    .loading {
+      display: none;
+    }
+  }
+}
+
+.loading {
+  h4 {
+    font-size: 11px;
   }
 }
 
